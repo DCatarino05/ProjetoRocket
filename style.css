@@ -16,7 +16,7 @@ header {
 .cta-button .label {
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 100%;
     letter-spacing: 0.02em;
     font-size: 0.875rem;
@@ -32,7 +32,7 @@ header {
 }
 
 .cta-button:hover, .cta-button.active {
-    background-color: var(--color-background-elevated-high-hover, #404044);
+    background-color: var(--color-background-elevated-high-hover, #e97612);
     color: var(--color-text-primary, #e6e6ea);
 }
 
