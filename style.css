@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*header*/
 header {
     background-color: #333;
     color: #fff;
@@ -37,6 +37,7 @@ nav a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
 }
+/*section1*/
 
 #videoContainer {
     position: relative;
@@ -52,6 +53,23 @@ nav a:hover {
     min-width: 100%;
     min-height: 100%;
 }
+p{
+    color: #fff;
+}
+.buttonla,
+.buttonaz {
+    display: inline-block; /* Certifica-se de que os botões fiquem em linha */
+    background-color: #E87722; /* Cor de fundo do botão laranja */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transform: rotate(45deg); /* Gira o botão em 45 graus */
+    margin: 10px; /* Adiciona margem entre os botões */
+}
+
+.buttonaz {
+    background-color: #307FE2; /* Cor de fundo do botão azul */
+}
 
 .hero {
     position: relative;
@@ -59,9 +77,10 @@ nav a:hover {
 }
 
 .content {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
     margin: 336px auto;
 }
+/*footer*/
 
 footer {
     background-color: #333;
