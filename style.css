@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /*header*/
 header {
@@ -55,6 +56,10 @@ nav a:hover {
 }
 p{
     color: #fff;
+    font-size: 1.5rem!important;
+    font-style: italic;
+    font-family: "Bourgeois W00 Medium", sans-serif;
+    font-weight: 700;
 }
 .buttonla,
 .buttonaz {
@@ -63,8 +68,13 @@ p{
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    transform: rotate(45deg); /* Gira o botão em 45 graus */
     margin: 10px; /* Adiciona margem entre os botões */
+    clip-path: polygon(7.5% 0,100% 0%,92.5% 100%,0% 100%);
+    font-size: 1.5rem;
+    padding-left: 1.95em;
+    padding-right: 1.95em;
+    font-family: "Bourgeois W00 Medium", sans-serif;
+    font-weight: 700;
 }
 
 .buttonaz {
