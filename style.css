@@ -2,8 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+/*header*/
 header {
     background-color: #18181C;
     color: #fff;
@@ -75,6 +76,7 @@ nav a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
 }
+/*section1*/
 
 #videoContainer {
     position: relative;
@@ -90,6 +92,32 @@ nav a:hover {
     min-width: 100%;
     min-height: 100%;
 }
+p{
+    color: #fff;
+    font-size: 1.5rem!important;
+    font-style: italic;
+    font-family: "Bourgeois W00 Medium", sans-serif;
+    font-weight: 700;
+}
+.buttonla,
+.buttonaz {
+    display: inline-block; /* Certifica-se de que os botões fiquem em linha */
+    background-color: #E87722; /* Cor de fundo do botão laranja */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px; /* Adiciona margem entre os botões */
+    clip-path: polygon(7.5% 0,100% 0%,92.5% 100%,0% 100%);
+    font-size: 1.5rem;
+    padding-left: 1.95em;
+    padding-right: 1.95em;
+    font-family: "Bourgeois W00 Medium", sans-serif;
+    font-weight: 700;
+}
+
+.buttonaz {
+    background-color: #307FE2; /* Cor de fundo do botão azul */
+}
 
 .hero {
     position: relative;
@@ -97,9 +125,10 @@ nav a:hover {
 }
 
 .content {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px; 
     margin: 336px auto;
 }
+/*footer*/
 
 footer {
     background-color: #333;
