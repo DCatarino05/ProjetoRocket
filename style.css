@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-image: url('/imagens/Rocket-League-Emblem.png');
+    background-position: 0;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+h1{
+   
+    margin-left: 4%;
+}
+
+nav {
+    color: #fff;
+    margin-right: auto;
+    margin-left: 5%;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
