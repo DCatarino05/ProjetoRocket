@@ -131,11 +131,13 @@ p{
 /*footer*/
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #000;
+    font-family: "Bourgeois W00 Medium","Arial Regular",Arial,sans-serif;
+    color: #d6d6d6;
+    display: block;
 }
+.social-icon svg {
+    width: 20px; /* Defina a largura desejada */
+    height: auto; /* Isso mantém a proporção original */
+}
+
