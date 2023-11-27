@@ -13,6 +13,29 @@ header {
     align-items: center;
 }
 
+.cta-button .label {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    font-size: 0.875rem;
+    color: var(--color-text-on-accent, #101014);
+}
+
+.cta-button:hover {
+    background: var(--color-fill-primary-hover, #61cdff);
+}
+
+.cta-button:not([disabled]) {
+    cursor: pointer;
+}
+
+.cta-button:hover, .cta-button.active {
+    background-color: var(--color-background-elevated-high-hover, #404044);
+    color: var(--color-text-primary, #e6e6ea);
+}
+
 .cta-button {
     appearance: none;
     border: 0px;
@@ -26,7 +49,7 @@ header {
     align-items: center;
     border-radius: 0.5rem;
     box-sizing: border-box;
-    color: var(--color-text-secondary, #aaaaae);
+    color: var(--color-text-secondary, #000000);
     display: flex;
     justify-content: space-between;
     margin-block: calc(var(--link-block-padding) * -1);
@@ -39,7 +62,7 @@ header {
     user-select: none;
     z-index: 3;
     --link-inline-padding: .75rem;
-    background: var(--color-fill-primary-default, #26bbff);
+    background: var(--color-fill-primary-default, #F58220);
     margin: 0px;
     text-align: center;
 }
