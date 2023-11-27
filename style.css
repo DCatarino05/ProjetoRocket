@@ -9,28 +9,35 @@ header {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    background-image: url('/imagens/Rocket-League-Emblem.png');
-    background-position: 0;
-    background-size: 100px;
-    background-repeat: no-repeat;
     display: flex;
-
+    align-items: center; /* Center items vertically */
 }
-h1{
-   
-    margin-left: 4%;
+
+img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Add margin to the right of the image for spacing */
+}
+
+h1 {
+    margin: 0;
 }
 
 nav {
-    color: #fff;
-    margin-right: auto;
-    margin-left: 5%;
+    margin: 0;
+    margin-right: auto; /* Push the nav to the right to align with the right edge of the header */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    margin-left: 15px; /* Add spacing between navigation links */
+}
+
+/* Style the navigation links on hover */
+nav a:hover {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
 }
 
 section {
