@@ -8,8 +8,7 @@
     <title>About Us</title>
 
     <style>
-
-         /*adicionar isto para cada página que for shared */
+        /* Adicionar isto para cada página que for shared */
         body {
             display: flex;
             flex-direction: column;
@@ -18,9 +17,50 @@
         }
 
         iframe {
-            flex: 1; 
+            flex: 1;
             width: 100%;
-            border: 0; 
+            border: 0;
+        }
+
+        footer {
+            background-color: #18181C;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto; /* Move o footer para a parte inferior */
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-left,
+        .footer-right {
+            width: 45%;
+        }
+
+        .footer-left h3,
+        .footer-right h3 {
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+
+        .footer-right a {
+            display: block;
+            margin-bottom: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-right a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -28,7 +68,24 @@
 
     <iframe src="shared.html" frameborder="0"></iframe>
 
-
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Contato</h3>
+                <p>Email: contato@seusite.com</p>
+                <p>Telefone: (123) 456-7890</p>
+            </div>
+            <div class="footer-right">
+                <h3>Redes Sociais</h3>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 Seu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
