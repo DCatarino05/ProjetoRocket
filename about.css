@@ -1,0 +1,38 @@
+
+
+.page-container {
+    background-color: #3498db;
+    font-family: Arial, sans-serif;
+    color: white; /* Cor do texto */
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container img {
+    margin-bottom: 10px;
+}
+.imgca{
+    width: 150px;
+    height: auto;
+    margin-left: 10%;
+}
+.container > div {
+    flex: 1;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
