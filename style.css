@@ -154,32 +154,12 @@ p{
 /*Section 2 */
     /* Estilo padrão para a linha */
 hr {
-    border: none;
-    height: 1px;
     background-color: #ccc;
-    margin: 20px 0;
-  }
-  
-  /* Estilo para uma linha com efeito de sombra */
-  hr.shadow {
+    border: none;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo para uma linha com cor personalizada */
-  hr.colored {
-    background-color: #3498db; /* Substitua pela cor desejada */
-  }
-  
-  /* Estilo para uma linha com largura personalizada e margens reduzidas */
-  hr.wide {
-    height: 3px; /* Largura da linha */
-    margin: 10px 0; /* Margens superior e inferior */
-  }
-  
-  /* Estilo para uma linha com estilo pontilhado */
-  hr.dotted {
-    border-top: 1px dotted #888;
-  }
+    height: 3px;
+    margin: 0;
+}
   
 .section2 {
     background: linear-gradient(to top,rgba(0, 10, 34, 1) 0,rgb(30, 130, 255) 100%);
@@ -201,6 +181,67 @@ hr {
     right: -40%;
 }
 
+/* Section 3*/
+.videos-heading {
+    position: relative;
+    background: #191D26;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.videos-heading h2 {
+    display: inline-block;
+    position: relative;
+    color: #11234c;
+    text-shadow: 2px 2px 4px #000; 
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-text {
+    font-size: 4rem;
+    color: #ffffff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #191D26;
+}
+
+.video-card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25%;
+}
+
+.video-card iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
 /*footer*/
 
 footer {
