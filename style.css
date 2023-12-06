@@ -185,16 +185,16 @@ hr {
 .videos-heading {
     position: relative;
     background: #191D26;
-    color: #fff;
-    padding: 20px;
     text-align: center;
-    font-size: 5rem;
 }
 
 .videos-heading h2 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #E87722!important;
+    font-size: 15rem;
+    letter-spacing: 0rem;
     display: inline-block;
-    position: relative;
-    color: #11234c;
+    color: #191D26;
     text-shadow: 2px 2px 4px #000; 
     margin: 0;
     padding: 0;
@@ -209,11 +209,13 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.overlay-text {
-    font-size: 4rem;
     color: #ffffff;
+    font-size: 15rem;
+}   
+.aaaa{
+    color: #fff;
+    font-size: 15rem!important; 
+    font-style: normal;
 }
 
 .card-container {
