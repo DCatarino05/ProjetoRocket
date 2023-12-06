@@ -24,9 +24,24 @@
         <span class="label">Play Now!</span>
     </a>
 </header>
-<div class="container-fluid-render">
-    @RenderBody()
-</div>
+
+<script>
+    // Função para carregar o conteúdo dinamicamente
+    function carregarPagina(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('conteudo-dinamico').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar a página:', error);
+            });
+    }
+
+    // Carregar a página inicial por padrão
+    carregarPagina('index.html');
+</script>
+
 <footer>
     <div class="footer-container">
         <div class="footer-left">
