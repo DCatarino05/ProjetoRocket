@@ -150,6 +150,60 @@ p{
     max-width: 800px; 
     margin: 336px auto;
 }
+
+/*Section 2 */
+    /* Estilo padrão para a linha */
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  
+  /* Estilo para uma linha com efeito de sombra */
+  hr.shadow {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para uma linha com cor personalizada */
+  hr.colored {
+    background-color: #3498db; /* Substitua pela cor desejada */
+  }
+  
+  /* Estilo para uma linha com largura personalizada e margens reduzidas */
+  hr.wide {
+    height: 3px; /* Largura da linha */
+    margin: 10px 0; /* Margens superior e inferior */
+  }
+  
+  /* Estilo para uma linha com estilo pontilhado */
+  hr.dotted {
+    border-top: 1px dotted #888;
+  }
+  
+.section2 {
+    background: linear-gradient(to top,rgba(0, 10, 34, 1) 0,rgb(30, 130, 255) 100%);
+    padding: 12.5% 0;
+}
+@media screen and (min-width:768px) {
+    .section2 {
+        padding: 7.5% 0 12.5%;
+    }
+}
+@media screen and (min-width:1024px) {
+    .section2 {
+        padding: 7.5% 0 10%;
+    }
+}
+
+.section2title{
+    position: relative;
+    right: -40%;
+}
+.section2paragrafo{
+
+}
+
 /*footer*/
 
 footer {
