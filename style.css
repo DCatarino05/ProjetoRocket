@@ -152,38 +152,60 @@ p{
 }
 
 /*Section 2 */
-    /* Estilo padrão para a linha */
+/* Estilo padrão para a linha */
 hr {
-    border: none;
-    height: 1px;
     background-color: #ccc;
-    margin: 20px 0;
-  }
-  
-  /* Estilo para uma linha com efeito de sombra */
-  hr.shadow {
+    border: none;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilo para uma linha com cor personalizada */
-  hr.colored {
-    background-color: #3498db; /* Substitua pela cor desejada */
-  }
-  
-  /* Estilo para uma linha com largura personalizada e margens reduzidas */
-  hr.wide {
-    height: 3px; /* Largura da linha */
-    margin: 10px 0; /* Margens superior e inferior */
-  }
-  
-  /* Estilo para uma linha com estilo pontilhado */
-  hr.dotted {
-    border-top: 1px dotted #888;
-  }
+    height: 3px;
+    margin: 0;
+}
   
 .section2 {
     background: linear-gradient(to top,rgba(0, 10, 34, 1) 0,rgb(30, 130, 255) 100%);
-    padding: 12.5% 0;
+    padding: 12.5%;
+}
+.overlay-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 15rem;
+}
+.aaaa{
+    color: #fff;
+    font-size: 14.7rem!important; 
+    font-style: normal;
+    margin: 0;
+}
+
+.videos-heading {
+    position: relative;
+    background: transparent;
+    text-align: center;
+}
+
+.videos-heading h2 {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #E87722!important;
+    font-size: 15rem;
+    letter-spacing: 0rem;
+    display: inline-block;
+    color: #E87722;
+    text-shadow: 2px 2px 4px #000; 
+    margin: 0;
+    padding: 0;
+}
+.teams-grid_container {
+    aspect-ratio: 16/9;
+    background-color: var(--foundation-15);
+    cursor: pointer;
+    border-radius: 0.5rem;
 }
 @media screen and (min-width:768px) {
     .section2 {
@@ -200,7 +222,6 @@ hr {
     position: relative;
     right: -40%;
 }
-
 
 /*footer*/
 
