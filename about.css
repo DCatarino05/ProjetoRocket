@@ -65,7 +65,7 @@ h1 {
 
 .videos-heading {
     position: relative;
-    background: transparent;
+    background: linear-gradient(#18181C 5%, #307FE2 );
     text-align: center;
 }
 
