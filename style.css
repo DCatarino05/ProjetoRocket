@@ -307,7 +307,7 @@ footer {
   .playlist-container {
     display: flex;
     justify-content: center;
-    height: 100vh; /* Ajuste a altura conforme necessário */
+   
 }
 
 .playlist-container iframe {
