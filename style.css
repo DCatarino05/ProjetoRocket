@@ -175,7 +175,7 @@ hr {
 }
   
 .section2 {
-    background: linear-gradient(to top,rgba(0, 10, 34, 1) 0,rgb(30, 130, 255) 100%);
+    background: linear-gradient(#18181C -545px, #307FE2);
     padding: 12.5%;
 }
 .overlay-div {
