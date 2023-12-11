@@ -269,3 +269,37 @@ footer {
 
   
 
+/*cards*/
+.card-container {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .cardh {
+    
+    
+    transition: 0.3s;
+    width: 250px;
+    margin: 10px;
+  }
+  
+  .cardh:hover {
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .containerh {
+    padding: 2px 16px;
+    background-color: #E87722;
+  }
+  .playlist-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Ajuste a altura conforme necessário */
+}
+
+.playlist-container iframe {
+    border-radius: 12px;
+    width: 50%;
+    height: 360px;
+    border: 0;
+}
