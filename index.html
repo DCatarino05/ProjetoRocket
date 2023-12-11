@@ -1,64 +1,65 @@
+<!-- shared.html -->
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-dpNd8e8M+FkKsaULJAEab6a4QzI/4HqpIh+PWd/jRauM2+1bq2Zl27blPQoE+gms" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>Rocket League Fan Site</title>
+    <title>shared</title>
 </head>
-<body>
-   
+<header>
+    <img class="img1" src="/imagens/Captura_de_ecrã_2023-11-30_143042-removebg-preview.png" alt="Rocket League Emblem">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 32" height="32" width="50" fill="var(--color-border-subtle, #303034)">
+        <path d="M0 0h2v32H0z"></path>
+    </svg>
+    <img class="logo__img" fetchpriority="high" height="32" alt="Rocket League Logo" src="https://media.graphassets.com/6VW4NouLTqCwpCe4ieJM" width="73">
+    
+    <nav>
+        <a href="#home"  onclick="carregarPagina('home.html')">Home</a>
+        <a href="#videos" onclick="carregarPagina('videos.html')">Videos</a>
+        <a href="#about"  onclick="carregarPagina('about.html')">About</a>
+    </nav>
+    
+    <a class="cta-button" href="https://store.epicgames.com/en-US/p/rocket-league" target="">
+        <span class="label">Play Now!</span>
+    </a>
+</header>
 
-    <section id="videoContainer">
-        <video id="backgroundVideo" poster="" preload="auto" autoplay loop muted playsinline>
-            <source src='/videos/98a1c2d9-33c7-4172-82cc-59059b318d58.mp4' class="video" />
-        </video>
-        <div class="hero is-fullheight">
-            <div class="hero-body">
-                <div class="content has-text-light" style="margin-left:3%;">
-                    <p class="title is-size-3-mobile is-size-1-tablet pr-0">
-                        TheTrioADR
-                    </p>
-                    <p class="subtitle is-size-6-mobile is-size-4-tablet is-size-4-desktop pr-6">
-                        TheTrioADR is a passionate and dedicated Rocket League team made up of three talented players who share a solid friendship and a mutual commitment to excellence on the playing field.
-                    </p>
-                    <div class="buttons">
-                        <a class="buttonla" href="/news/season-12-hacks-the-mainframe-with-the-porsche-911-turbo/">LEARN MORE</a>
-                        <a class="buttonaz" href="https://www.youtube.com/watch?v=kB9uftJxxx4">WATCH TRAILER</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <hr>
+<div id="conteudo-dinamico"></div>
 
-    <section id="this-is-rocket-league" class="section2">
-        <div class="videos-heading">
-            <h2>PLAYERS</h2>
-            <div class="overlay-div">
-                <p class="aaaa">PLAYERS</p>
-            </div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Contato</h3>
+            <p>Email: contato@seusite.com</p>
+            <p>Telefone: (123) 456-7890</p>
         </div>
-        <div homegridurl="/games/cs" data-w-id="37fde64b-7f0e-9086-e314-0202b6c34d1a" role="listitem" class="teams-grid_container w-dyn-item">
-            <div class="teams-grid_item-default shadow-small" style="display: flex;">
-                XZ_Player2 </div>
-                <div class="teams-grid_item-hover shadow-medium" style="display: none;"><div class="teams-grid-logo">
-                    <img alt="" loading="lazy" src="https://assets-global.website-files.com/64bf6e8cda9043babe7ca004/65240277ffceb359534e8e21_counter-strike-2_logo.svg" class="icon-embed-teams-grid"></div>
-                    <img alt="" loading="lazy" src="https://assets-global.website-files.com/64bf6e8cda9043babe7ca004/652402c6a69837062d5b8dea_csgo_bg.png" sizes="100vw" srcset="https://assets-global.website-files.com/64bf6e8cda9043babe7ca004/652402c6a69837062d5b8dea_csgo_bg-p-500.png 500w, https://assets-global.website-files.com/64bf6e8cda9043babe7ca004/652402c6a69837062d5b8dea_csgo_bg.png 576w" class="border-small">
-                </div>
+        <div class="footer-right">
+            <h3>Redes Sociais</h3>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
+    <div class="copyright">
+        <p>&copy; 2023 Seu Site. Todos os direitos reservados.</p>
+    </div>
+</footer>
+<script>
+    // Função para carregar o conteúdo dinamicamente
+    function carregarPagina(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('conteudo-dinamico').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Erro ao carregar a página:', error);
+            });
+    }
+
+    // Carregar a página inicial por padrão
+    carregarPagina('home.html');
+    
+</script>
 
 
-
-
-    </section>
-
-
-
-     
-
-   
-</body>
-</html>
