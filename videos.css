@@ -40,6 +40,19 @@ video {
     font-size: 15rem!important; 
     font-style: normal;
 }
+@media (max-width: 768px) {
+    .videos-heading h2 {
+        font-size: 5rem;
+    }
+
+    .overlay-div {
+        font-size: 5rem;
+    }
+
+    .aaaa {
+        font-size: 5rem!important;
+    }
+}
 
 .card-container {
     display: flex;
@@ -102,21 +115,20 @@ video {
     height: 100%;
     border: none;
 }
-/* Estilos para telas pequenas */
-@media only screen and (max-width: 600px) {
-    .videos-heading h2 {
-        font-size: 8rem;
-    }
 
-    .overlay-div,
-    .aaaa {
-        font-size: 8rem !important;
-    }
-
+@media (max-width: 768px) {
     .card-container,
     .card-container1 {
-        padding: 5px; /* Ajuste o padding conforme necessário */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-card,
+    .video-card1 {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }
-
 
