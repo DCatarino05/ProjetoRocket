@@ -239,10 +239,10 @@ hr {
 /*footer*/
 
 footer {
-    background-color: #18181C ;
+    background-color: #18181C;
     color: #fff;
     padding: 20px 0;
-    margin-top: auto; /* Move o footer para a parte inferior */
+    margin-top: auto;
 }
 
 .footer-container {
@@ -264,8 +264,8 @@ footer {
 }
 
 .footer-right a {
-    display: block;
-    margin-bottom: 5px;
+    display: inline-block; /* Alteração para tornar os ícones inline-block */
+    margin-right: 10px; /* Espaçamento entre os ícones */
     text-decoration: none;
     color: #fff;
 }
@@ -274,11 +274,11 @@ footer {
     text-decoration: underline;
 }
 
-  
-  .copyright {
+.copyright {
     margin-top: 20px;
     text-align: center;
-  }
+}
+
 
   
 
