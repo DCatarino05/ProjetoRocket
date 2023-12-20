@@ -115,7 +115,10 @@ video {
     height: 100%;
     border: none;
 }
-
+.videoh{
+    width:560px ;
+    height:315px;
+}
 @media (max-width: 768px) {
     .card-container,
     .card-container1 {
@@ -129,6 +132,10 @@ video {
         height: auto;
         margin-right: 0;
         margin-bottom: 20px;
+    }
+    .videoh{
+        width: 90%;
+        height: auto;
     }
 }
 
