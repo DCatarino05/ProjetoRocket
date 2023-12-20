@@ -98,6 +98,30 @@ nav a:hover {
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
 }
+@media only screen and (max-width: 414px) {
+    header {
+        padding: 10px; /* Ajuste de padding para telas muito pequenas */
+    }
+
+    .cta-button {
+        padding: 6px 12px; /* Ajuste de padding para telas muito pequenas */
+    }
+
+    .cta-button .label {
+        font-size: 0.7rem; /* Ajuste de fonte para telas muito pequenas */
+    }
+
+    nav a {
+        margin-left: 5px; /* Ajuste de espaçamento para telas muito pequenas */
+        font-size: 0.7rem; /* Ajuste de fonte para telas muito pequenas */
+    }
+    .img1 {
+        width: 10%;
+        height: auto;
+        margin-right: 10px;
+    }
+    
+}
 /*section1*/
 
 #videoContainer {
@@ -220,20 +244,83 @@ hr {
     cursor: pointer;
     border-radius: 0.5rem;
 }
-@media screen and (min-width:768px) {
-    .section2 {
-        padding: 7.5% 0 12.5%;
-    }
-}
-@media screen and (min-width:1024px) {
-    .section2 {
-        padding: 7.5% 0 10%;
-    }
-}
+
 
 .section2title{
     position: relative;
     right: -40%;
+}
+@media only screen and (max-width: 768px) {
+    .section2 {
+        padding: 10%;
+    }
+
+    .overlay-div {
+        font-size: 4rem; /* Ajuste o tamanho da fonte para telas menores */
+    }
+
+    .aaaa {
+        font-size: 4.7rem !important; /* Ajuste o tamanho da fonte para telas menores */
+    }
+
+    .videos-heading h2 {
+        font-size: 5rem;
+    }
+
+    .section2title {
+        right: 0;
+    }
+}
+/*cards*/
+.card-container {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .cardh {
+    
+    
+    transition: 0.3s;
+    width: 250px;
+    margin: 10px;
+  }
+  
+  .cardh:hover {
+    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .containerh {
+    padding: 2px 16px;
+    background-color: #E87722;
+  }
+  .playlist-container {
+    display: flex;
+    justify-content: center;
+   
+}
+.playlist-container iframe {
+    border-radius: 12px;
+    width: 50%;
+    height: 360px;
+    border: 0;
+}
+@media only screen and (max-width: 768px) {
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .cardh {
+        width: calc(50% - 20px);
+    }
+
+    .playlist-container {
+        flex-direction: column;
+    }
+
+    .playlist-container iframe {
+        width: 100%;
+        height: 240px;
+    }
 }
 
 /*footer*/
@@ -282,37 +369,3 @@ footer {
 
   
 
-/*cards*/
-.card-container {
-    display: flex;
-    justify-content: center; 
-  }
-  
-  .cardh {
-    
-    
-    transition: 0.3s;
-    width: 250px;
-    margin: 10px;
-  }
-  
-  .cardh:hover {
-    box-shadow: 8px 8px 16px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .containerh {
-    padding: 2px 16px;
-    background-color: #E87722;
-  }
-  .playlist-container {
-    display: flex;
-    justify-content: center;
-   
-}
-
-.playlist-container iframe {
-    border-radius: 12px;
-    width: 50%;
-    height: 360px;
-    border: 0;
-}
