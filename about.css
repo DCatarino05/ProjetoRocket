@@ -76,8 +76,7 @@ h1 {
 /* Media Query for smaller screens */
 @media only screen and (max-width: 768px) {
     .container {
-        padding-left: 2%;
-        padding-right: 2%;
+        padding:10%;
     }
 
     .imgca {
@@ -89,5 +88,16 @@ h1 {
         padding-left: 0;
         padding-bottom: 20px;
     }
+    .overlay-div {
+        font-size: 4rem; /* Ajuste o tamanho da fonte para telas menores */
+    }
+
+    .aaaa {
+        font-size: 3rem !important; /* Ajuste o tamanho da fonte para telas menores */
+    }
+    .videos-heading h2 {
+        font-size: 3.2rem;
+    }
+    
 }
 
