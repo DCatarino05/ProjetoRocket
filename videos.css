@@ -116,8 +116,8 @@ video {
     border: none;
 }
 .videoh{
-    width:560px ;
-    height:315px;
+    width:90% ;
+    height:auto;
 }
 @media (max-width: 768px) {
     .card-container,
